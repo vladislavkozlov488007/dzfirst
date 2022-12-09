@@ -1,15 +1,16 @@
-﻿Console.WriteLine("Введите число A");
-int numA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите чило B");
-int numB = Convert.ToInt32(Console.ReadLine());
-
-if (numA>numB)
+﻿Console.WriteLine("Введите три числа");
+int A = Convert.ToInt32(Console.ReadLine());
+int B = Convert.ToInt32(Console.ReadLine());
+int C = Convert.ToInt32(Console.ReadLine());
+if (A > B && A > C)
 {
-    Console.WriteLine("MAX число "+numA);
-    Console.WriteLine("MIN число "+numB);
+    Console.WriteLine("MAX = A" +A);
+}
+else if (B > A && B > C)
+{
+    Console.WriteLine("MAX = B " +B);   
 }
 else
 {
-    Console.WriteLine("MAX число "+numB);
-    Console.WriteLine("Min число "+numA);
+    Console.WriteLine("MAX = C" +C);
 }
