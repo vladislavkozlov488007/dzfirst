@@ -1,16 +1,10 @@
-﻿Console.WriteLine("Введите три числа");
-int A = Convert.ToInt32(Console.ReadLine());
-int B = Convert.ToInt32(Console.ReadLine());
-int C = Convert.ToInt32(Console.ReadLine());
-if (A > B && A > C)
+﻿Console.WriteLine("Введите число");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n % 2 == 0)
 {
-    Console.WriteLine("MAX = A" +A);
-}
-else if (B > A && B > C)
-{
-    Console.WriteLine("MAX = B " +B);   
+    Console.WriteLine("Да, число четное");
 }
 else
 {
-    Console.WriteLine("MAX = C" +C);
+    Console.WriteLine("Нет, число не четное");
 }
