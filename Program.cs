@@ -1,10 +1,15 @@
 ﻿Console.WriteLine("Введите число");
-int n = Convert.ToInt32(Console.ReadLine());
-if (n % 2 == 0)
+int N = Convert.ToInt32(Console.ReadLine());
+int index = 1;
+while (index <= N)
 {
-    Console.WriteLine("Да, число четное");
-}
-else
-{
-    Console.WriteLine("Нет, число не четное");
-}
+    if (index % 2 == 0)
+    {
+    Console.Write( index +", ");
+    index++;
+    }
+    else
+    {
+      index++;
+    }
+}    
